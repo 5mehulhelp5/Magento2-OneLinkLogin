@@ -1,0 +1,15 @@
+<?php declare(strict_types=1);
+
+use HyTales\OneLinkLogin\Block\Adminhtml\Login\Link;
+use Magento\Framework\Escaper;
+
+/** @var Link $block */
+/** @var Escaper $escaper */
+?>
+
+<?php foreach ($block->getAccounts() as $account): ?>
+    <a href="<?= $escaper->escapeUrl($block->getAccountUrl($account)) ?>"
+       style="display: block; margin-top: 20px;">
+        <?= $escaper->escapeHtml($account['label'] ?: $account['email']) ?>
+    </a>
+<?php endforeach; ?>

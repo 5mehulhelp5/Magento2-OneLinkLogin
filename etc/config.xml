@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <admin>
+            <onelinklogin>
+                <enabled>1</enabled>
+                <accounts>{"0":{"label":"One-Link Login","email":"admin@admin.nl","role_id":"1"}}</accounts>
+            </onelinklogin>
+        </admin>
+    </default>
+</config>

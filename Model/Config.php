@@ -8,8 +8,8 @@ use Magento\Framework\Serialize\SerializerInterface;
 
 class Config
 {
-    private const string XML_PATH_ENABLED = 'admin/onelinklogin/enabled';
-    private const string XML_PATH_ACCOUNTS = 'admin/onelinklogin/accounts';
+    private const XML_PATH_ENABLED = 'admin/onelinklogin/enabled';
+    private const XML_PATH_ACCOUNTS = 'admin/onelinklogin/accounts';
 
     /**
      * @param ScopeConfigInterface $scopeConfig
